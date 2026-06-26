@@ -1,0 +1,53 @@
+# ==========================================
+# Monogatari Game Engine `.gitignore`
+# ==========================================
+
+# --- Dependencies ---
+# Node / NPM packages
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Production & Build Artifacts ---
+# Desktop app distribution builds (Electron-builder / Cordova)
+dist/
+build/
+out/
+*.exe
+*.dmg
+*.app
+*.deb
+*.rpm
+
+# --- Editor / IDE Settings ---
+# VS Code local configurations
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# WebStorm / IntelliJ
+.idea/
+
+# --- Operating System Junk ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotbackup
+
+# --- Temporary Files & Logs ---
+*.log
+.eslintcache
