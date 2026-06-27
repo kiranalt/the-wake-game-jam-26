@@ -76,7 +76,7 @@ monogatari.assets ('scenes', {
 // Define the Characters
 monogatari.characters ({
 	'y': {
-		name: 'Yui',
+		name: 'Jimmy',
 		color: '#5bcaff'
 	}
 });
@@ -84,11 +84,11 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #f7f6f6 with fadeIn',
+		'show scene #5600ac with fadeIn',
 		'show notification Welcome',
 		{
 			'Input': {
-				'Text': 'What is your name?',
+				'Text': 'Oh who is you?',
 				'Validation': function (input) {
 					return input.trim ().length > 0;
 				},
