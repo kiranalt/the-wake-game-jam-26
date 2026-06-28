@@ -1,4 +1,5 @@
 /* global monogatari */
+//import intro from './scenes/intro';
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
@@ -75,10 +76,23 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	'J': {
+	'j': {
 		name: 'Jimmy',
-		color: '#5bcaff'
-	}
+		color: '#a9a162'
+	},
+	// These names will be updated in the story progression
+	'm': {
+		name: 'Coffin Maker',
+		colour: '#7b76cd'
+	},
+	'a': {
+		name: 'Florist',
+		colour: '#76b24c'
+	},
+	'm': {
+		name: 'Baker',
+		colour: '#eb930f'
+	},
 });
 
 monogatari.script ({
@@ -110,10 +124,10 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'J Hi {{player.name}} Welcome to Monogatari!',
+		'j Hi {{player.name}} Welcome to Monogatari!',
 		{
 			'Choice': {
-				'Dialog': 'J Have you already read some documentation?',
+				'Dialog': 'j Have you already read some documentation?',
 				'Yes': {
 					'Text': 'Yes',
 					'Do': 'jump Yes'
@@ -127,20 +141,26 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'J Thats awesome!',
-		'J Then you are ready to go ahead and create an amazing Game!',
-		'J I can’t wait to see what story you’ll tell!',
+		'j Thats awesome!',
+		'j Then you are ready to go ahead and create an amazing Game!',
+		'j I can’t wait to see what story you’ll tell!',
 		'end'
 	],
 
 	'No': [
 
-		'J You can do it now.',
+		'j You can do it now.',
+
+		{
+			'Text': 'Let\'s go!',
+			'Do': 'jump intro'
+		},
 
 		'show message Help',
 
-		'J Go ahead and create an amazing Game!',
-		'J I can’t wait to see what story you’ll tell!',
+		'j Go ahead and create an amazing Game!',
+		'j I can’t wait to see what story you’ll tell!',
+		
 		'end'
 	]
 });
