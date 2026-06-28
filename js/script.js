@@ -72,6 +72,10 @@ monogatari.assets ('scenes', {
 
 });
 
+monogarari.assets ('cgs',{
+
+});
+
 
 // Define the Characters
 monogatari.characters ({
