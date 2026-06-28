@@ -75,7 +75,7 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	'y': {
+	'J': {
 		name: 'Jimmy',
 		color: '#5bcaff'
 	}
@@ -110,10 +110,10 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'y Hi {{player.name}} Welcome to Monogatari!',
+		'J Hi {{player.name}} Welcome to Monogatari!',
 		{
 			'Choice': {
-				'Dialog': 'y Have you already read some documentation?',
+				'Dialog': 'J Have you already read some documentation?',
 				'Yes': {
 					'Text': 'Yes',
 					'Do': 'jump Yes'
@@ -127,20 +127,20 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'y Thats awesome!',
-		'y Then you are ready to go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+		'J Thats awesome!',
+		'J Then you are ready to go ahead and create an amazing Game!',
+		'J I can’t wait to see what story you’ll tell!',
 		'end'
 	],
 
 	'No': [
 
-		'y You can do it now.',
+		'J You can do it now.',
 
 		'show message Help',
 
-		'y Go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+		'J Go ahead and create an amazing Game!',
+		'J I can’t wait to see what story you’ll tell!',
 		'end'
 	]
 });
