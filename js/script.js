@@ -80,22 +80,22 @@ monogarari.assets ('cgs',{
 
 // Define the Characters
 monogatari.characters ({
-	'j': {
-		name: 'Jimmy',
-		color: '#a9a162'
-	},
+	
 	// These names will be updated in the story progression
 	'm': {
 		name: 'Coffin Maker',
-		colour: '#7b76cd'
+		colour: '#7b76cd',
+		wake: false
 	},
 	'a': {
 		name: 'Florist',
-		colour: '#76b24c'
+		colour: '#76b24c',
+		wake: false
 	},
 	'm': {
 		name: 'Baker',
-		colour: '#eb930f'
+		colour: '#eb930f',
+		wake: false
 	},
 });
 
