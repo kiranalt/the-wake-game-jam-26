@@ -3,3 +3,5 @@ function characterReveal(id, name){
         [id]: {name}
     });
 }
+
+// edit value 
