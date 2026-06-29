@@ -73,98 +73,36 @@ monogatari.assets ('scenes', {
 
 });
 
-monogarari.assets ('cgs',{
+monogatari.assets ('cgs',{
 
 });
 
-
 // Define the Characters
 monogatari.characters ({
-	'j': {
-		name: 'Jimmy',
-		color: '#a9a162'
-	},
+	
 	// These names will be updated in the story progression
 	'm': {
-		name: 'Coffin Maker',
-		colour: '#7b76cd'
+		name: 'Coffin Maker',			//Maeve
+		colour: '#7b76cd',
 	},
 	'a': {
-		name: 'Florist',
-		colour: '#76b24c'
+		name: 'Florist',				//Arlo
+		colour: '#76b24c',
 	},
-	'm': {
-		name: 'Baker',
-		colour: '#eb930f'
+	'b': {
+		name: 'Baker',					// Quinn
+		colour: '#eb930f',
+	},
+	'j': {
+		name: 'Jimmy',					// Just Jimmy.
+		colour: '#0dd2ec',
 	},
 });
 
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #5600ac with fadeIn',
-		'show notification Welcome',
-		{
-			'Input': {
-				'Text': 'Oh who is you?',
-				'Validation': function (input) {
-					return input.trim ().length > 0;
-				},
-				'Save': function (input) {
-					this.storage ({
-						player: {
-							name: input
-						}
-					});
-					return true;
-				},
-				'Revert': function () {
-					this.storage ({
-						player: {
-							name: ''
-						}
-					});
-				},
-				'Warning': 'You must enter a name!'
-			}
-		},
-		'j Hi {{player.name}} Welcome to Monogatari!',
-		{
-			'Choice': {
-				'Dialog': 'j Have you already read some documentation?',
-				'Yes': {
-					'Text': 'Yes',
-					'Do': 'jump Yes'
-				},
-				'No': {
-					'Text': 'No',
-					'Do': 'jump No'
-				}
-			}
-		}
+		'jump baker_start',
+		'end',
 	],
-
-	'Yes': [
-		'j Thats awesome!',
-		'j Then you are ready to go ahead and create an amazing Game!',
-		'j I can’t wait to see what story you’ll tell!',
-		'end'
-	],
-
-	'No': [
-
-		'j You can do it now.',
-
-		{
-			'Text': 'Let\'s go!',
-			'Do': 'jump intro'
-		},
-
-		'show message Help',
-
-		'j Go ahead and create an amazing Game!',
-		'j I can’t wait to see what story you’ll tell!',
-		
-		'end'
-	]
 });
