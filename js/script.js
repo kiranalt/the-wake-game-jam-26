@@ -82,19 +82,19 @@ monogatari.characters ({
 	
 	// These names will be updated in the story progression
 	'm': {
-		name: 'Coffin Maker',
+		name: 'Coffin Maker',			//Maeve
 		colour: '#7b76cd',
 	},
 	'a': {
-		name: 'Florist',
+		name: 'Florist',				//Arlo
 		colour: '#76b24c',
 	},
 	'b': {
-		name: 'Baker',
+		name: 'Baker',					// Quinn
 		colour: '#eb930f',
 	},
 	'j': {
-		name: 'Jimmy',
+		name: 'Jimmy',					// Just Jimmy.
 		colour: '#0dd2ec',
 	},
 });
@@ -102,7 +102,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'jump intro',
+		'jump baker_start',
 		'end',
 	],
 });

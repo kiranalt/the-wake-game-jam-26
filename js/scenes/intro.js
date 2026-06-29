@@ -18,8 +18,8 @@ monogatari.script({
         'j In any case, I have less than a week to get everything together. A cake for my coworkers, flower\'s for myself, and a ceremonial coffin to signify my newfound freedom.',
         'j I don\'t even think I get to keep it.',
         'j The office has a collection of all the coffins from Reapers who retired.',
-        'j There aren\'t many of us. I guess it\'s the dream job, paid rent, food, and instead of taking your sould you get to take others!',
-        'j All in all a fair trade! Still, I guess I\'ve never been a huge follower of the crowd.',
+        'j There aren\'t many of us. I guess it\'s the dream job, paid rent, food, and instead of taking your soul, you get to take the souls of others!',
+        'j All-in-all, a fair trade! Still, I guess I\'ve never been a huge follower of the crowd.',
 
         'j I should really get home. Overtime for a job I\'m leaving is so stupid.',
  
