@@ -1,5 +1,5 @@
 monogatari.script({
-    'baker_start': [
+    baker_start: [
         'Warmth floods my bones as I step onto Charon Drive. I can feel the gravel crunching under my shoes, comfort wafting through the air.',
         'I can feel the life everywhere- people chattering on their lunch breaks, taking in the crisp winter air. Today is a small respite from the rest of the week',
         'It\'s a rare thing to be able to feel the sun so strongly in the beginning of July. Rain and clouds have been tormenting us for weeks.',
@@ -20,7 +20,7 @@ monogatari.script({
         'j So you did read my booking?!',
         'b Um yeah? it\'s my job? You deliver souls I deliver baked goods? And I know the baked good you want! Duh!',
         'j ... Whatever',
-        'b Why so serious? Come in and lets start picking your perfect pastry- And all me Quinn!',
+        'b Why so serious? Come in and lets start picking your perfect pastry- And call me Quinn!',
         
         {
             Function: {
@@ -32,8 +32,31 @@ monogatari.script({
                 }
             }
         },
-    
         'b damn girl that nesting of yours is insane',
-        'end'
+        {
+            Choice : {
+                Yes : {
+                    Text : 'Yes',
+                    Do: 'jump baker_1_positive',
+                }
+            },
+        },
     ],
+
+    baker_1_positive: [
+        'IT WORKED',
+        {
+            Function:{
+                Apply: () => {
+                    const currentKarma = monogatari.storage('story').karma;
+                    updateGameValue('story', 'karma', currentKarma + 1);
+                },
+                Revert :() => {
+                    const currentKarma = monogatari.storage('story').karma;
+                    updateGameValue('story', 'karma', currentKarma - 1);
+                }
+            }
+        },
+        'dang i hope the karma changes worked or i\'ll cry'
+    ]
 });
