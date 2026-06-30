@@ -102,7 +102,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'jump baker_start',
+		'jump intro',
 		'end',
 	],
 });
