@@ -1,8 +1,8 @@
 monogatari.script({
     intro: [
         'The cold permeates my skin, my eyes are burning with sharp pains behind my eyes.',
-        'Ah.',
-        'It\'s already 8:35pm',
+        'j Ah.',
+        'j It\'s already 8:35pm',
         'I\'m not a hard worker. I\'ve made peace with that. My life\'s purpose isn\'t to be some corporate slave. But I still find myself in the office, after everyone else.',
         'It\'s like theres something pulling me here... But I can\'t seem to slow down',
         'I guess working at WAKE isn\'t the worst job I could have. They pay for my studio apartment in the underworld. Heck, I even get a takeout allowance.',
@@ -17,10 +17,10 @@ monogatari.script({
         'And all these records...',
         '...',
         '...',
-        'Maybe I could just quit. It\'s been a bit of a passing thought for a while but...',
-        'I\'ve saved a lot of money working here. There\'s not much to spend it on.',
-        'My retirement fund could be worse...',
-        '...And maybe I would rather be selling mattresses...',
+        'j Maybe I could just quit. It\'s been a bit of a passing thought for a while but...',
+        'j I\'ve saved a lot of money working here. There\'s not much to spend it on.',
+        'j My retirement fund could be worse...',
+        'j ...And maybe I would rather be selling mattresses...',
 
         {
             Choice : {
@@ -36,7 +36,7 @@ monogatari.script({
         },
     ],
     intro_freedom: [
-        'I guess it\'s time then.',
+        'j I guess it\'s time then.',
         'It\'s so sudden, but it has been a long time coming.',
         'Reading the lists of the dead each day... making sure the right souls go to the right places... hiring new Reapers.',
         'Is that what I\'m made for?',

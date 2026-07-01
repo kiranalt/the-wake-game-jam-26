@@ -22,3 +22,5 @@ function checkGameValue(objectKey, subKey, val){
     
     return currentObject[subKey] === val;
 }
+
+//function determineEndingScore()

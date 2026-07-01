@@ -5,7 +5,9 @@ monogatari.storage ({
 	mc: {
 		name: 'Jimmy',
 		unlock_good: true,
-		inventory: [],
+		has_flowers: false,
+		has_coffin: false,
+		has_cake: false,
 
 	},
 	story: {					// update with ... or i'll kill your family
