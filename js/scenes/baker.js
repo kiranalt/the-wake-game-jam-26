@@ -49,18 +49,6 @@ monogatari.script({
     ],
 
     baker_1_positive: [
-        {
-            Function:{
-                Apply: () => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma + 1);
-                },
-                Revert :() => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma - 1);
-                }
-            }
-        },
         'j What\'s your favourite flavour?',
         'b My favourite? Hm. Well I really love unique and spiced food, so maybe Turmeric and Mango?',
         'b I guess it\'s not that out there, but you\'ve got to have some open minded co-workers to have lemon cake at your wake.',
@@ -79,18 +67,6 @@ monogatari.script({
     ],
 
     baker_2_positive: [
-        {
-            Function:{
-                Apply: () => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma + 1);
-                },
-                Revert :() => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma - 1);
-                }
-            }
-        },
         'b Really? That\'s a brave choice. I mean there\'s definetly something special about it though.',
         'b It takes a lot of patience to balance the flavours and get them to taste good together. But it\'s so worth it.',
         'b Not a lot of people try it. And they dont necessarily feel like they\'re missing out.',
@@ -113,18 +89,6 @@ monogatari.script({
     ],
 
     baker_3_positive: [
-        {
-            Function:{
-                Apply: () => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma + 1);
-                },
-                Revert :() => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma - 1);
-                }
-            }
-        },
         'b Great! You need it by...?',
         'j Next Friday if it\'s not too much trouble-',
         'b No! Not at all!',
@@ -145,18 +109,6 @@ monogatari.script({
         }
     ],
     baker_bad_choices: [            // no cake no cg, auto fail
-        {
-            Function:{
-                Apply: () => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', 1);
-                },
-                Revert :() => {
-                    const currentKarma = monogatari.storage('story').karma;
-                    updateGameValue('story', 'karma', currentKarma);
-                }
-            }
-        },
         'j I\'ll just get vanilla. Everyone will eat it, it\'s just cake anyways.',
         'b Sure that\'s-',
         'j I have bigger thing\'s to worry about the pastries. My break is almost over and I\'m wasting my time.',
@@ -166,6 +118,7 @@ monogatari.script({
         '...',
         'That was rude. I feel bad. But...',
         'Maybe I\'m not made for this',
+        'jump florist_start',
     ],
 
     baker_neutral: [                // get cake, no cg
@@ -192,6 +145,7 @@ monogatari.script({
         'j Thank you!',
         'j Maybe I\'ll see you there. ',
         'j Bye.',
+        'jump florist_start',
     ],
 
     baker_best: [                   // the cg
@@ -241,6 +195,6 @@ monogatari.script({
         'j I\'ll see you at the wake!',
         'j Sure!. ',
         'j Bye.',
-
+        'jump florist start'
     ]
 });
