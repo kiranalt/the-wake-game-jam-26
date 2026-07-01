@@ -1,5 +1,30 @@
 monogatari.script({
     florist_start: [
+        'It\'s my second day trying to prepare for my wake.',
+        'Honestly, I didn\'t realise what a pain selecting my flowers would be.',
+        'The language of flowers isn\'t something I specifically have had to worry about. Sure, there are some Reapers who worry about funerary wreaths.',
+        'They might be the ones in charge of making sure that the messages are carried to the dead after death. It\'s important. Impactful.',
+        'WAKE values them. It\'s a tough job. Not every message is wrapped in kindness- more often than not the intentions are coated in a venomous poison.',
+        'To be dead and find out there isn\'t a single soul that was there for you...',
+
+        '...',
+
+        'I hope that\'s not how it feels when I retire. Bad messages...',
+        'I\'ve never cared before. I guess I always just assumed nobody would remember me.',
+        'It\'s a huge pain now though... Needing a minimum of two people at my WAKE. And what kind of flowers can I even get?',
+        'Is there a flower for being an employee?',
+        'I don\'t do anything that could-',
+        '... Ugh. I don\'t do anything point blank period.',
+        'Well. I suppose it doesn\'t matter.',
+        'This is all just a formality.',
+        'Something I need to do to retire.',
+        'a Are you actually looking to buy those flowers, or just staring?',
+        'j Looking to buy. Why?',
+        'a Who are they? For a special person? We just about have some of our post valentines stock- all wilted varieties.',
+        'a Perfect for any situation. Bound to get their attention, and if you break up...',
+        'a Well. They can be representative.',
+        'j ...Thanks. I\'m not too interested in those things though.',
+        
         {
             Function: {
                 Apply: ()=> {

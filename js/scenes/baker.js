@@ -51,7 +51,7 @@ monogatari.script({
     baker_1_positive: [
         'j What\'s your favourite flavour?',
         'b My favourite? Hm. Well I really love unique and spiced food, so maybe Turmeric and Mango?',
-        'b I guess it\'s not that out there, but you\'ve got to have some open minded co-workers to have lemon cake at your wake.',
+        'b I guess it\'s not that out there, but you\'ve got to have some open minded co-workers to have turmeric cake at your wake.',
         {
             Choice : {
                 Yes : {
@@ -111,13 +111,13 @@ monogatari.script({
     baker_bad_choices: [            // no cake no cg, auto fail
         'j I\'ll just get vanilla. Everyone will eat it, it\'s just cake anyways.',
         'b Sure that\'s-',
-        'j I have bigger thing\'s to worry about the pastries. My break is almost over and I\'m wasting my time.',
+        'j I have bigger things to worry about than the pastries. My break is almost over and I\'m wasting my time.',
         'b Oh! Okay-',
         'j Just forget it. This is a hassle.',
         'b O-Okay! Interesting reaction to some pastries. Have a nice day.',
         '...',
         'That was rude. I feel bad. But...',
-        'Maybe I\'m not made for this',
+        'Maybe I\'m not made for this.',
         'jump florist_start',
     ],
 
