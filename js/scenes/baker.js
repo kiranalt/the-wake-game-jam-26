@@ -195,6 +195,6 @@ monogatari.script({
         'j I\'ll see you at the wake!',
         'j Sure!. ',
         'j Bye.',
-        'jump florist start'
+        'jump florist_start'
     ]
 });
