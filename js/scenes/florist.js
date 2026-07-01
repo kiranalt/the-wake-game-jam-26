@@ -71,7 +71,7 @@ monogatari.script({
         'j Yeah, it was.',
         'j I\'m fine with your recommendation but, your phrasing doesn\'t make me feel too inclined to buy anything now.',
         'a Well. I find that people are kind of like plant\'s. They look different, they grow different, there\'s a lot you can tell by their behaviours.',
-        'a I for one, can tell that you have no idea what other people think of you.'
+        'a I for one, can tell that you have no idea what other people think of you.',
         {
             Choice : {
                 Yes : {
