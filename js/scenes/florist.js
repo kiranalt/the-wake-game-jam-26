@@ -24,7 +24,16 @@ monogatari.script({
         'a Perfect for any situation. Bound to get their attention, and if you break up...',
         'a Well. They can be representative.',
         'j ...Thanks. I\'m not too interested in those things though.',
-        
+        'a Fair enough. You just seemed a little deep in thought. Not sad enough for funeral flowers but-',
+        'j They are funeral flowers actually.',
+        'a Ah.',
+        'a My condolences.',
+        'a If I may ask... who for?',
+        'j Me.',
+        'a Oh... are you okay? I mean, the Underworld has a lot of people who can hel-',
+        'j No, no. I\'m retiring.',
+        'a Ah I see then. You\'re a Reaper?',
+        'a I work here, I can help you pick some out if you don\'t have any in mind yet. My name is Arlo by the way.',
         {
             Function: {
                 Apply: ()=> {
@@ -35,15 +44,22 @@ monogatari.script({
                 }
             }
         },
-       
+        'j Nice to meet you, I\'m Jimmy.',
+        'j Honestly... I haven\'t had anything specific in mind.',
+        'j I don\'t really care much, as long as I fulfill the requirement to retire.',
+        'a Oh I see. You just wanna get outta there huh?',
+        'j Well... if thats your observation.',
+        'a So, do you think you\'re someone your coworkers will miss?',
+        'j ...',
+        'a Yikes... did I hit a sour spot? Based on that-',
         {
             Choice : {
                 Yes : {
-                    Text : 'Take it slow.',
+                    Text : 'That was kinda rude.',
                     Do: 'jump florist_1_positive',  // determine between good and neutral
                 },
                 No : {
-                    Text : 'Finish this quickly.',      // illusion of free will
+                    Text : 'No!',      // illusion of free will
                     Do: 'jump florist_bad_choices',
                 },
             },
@@ -51,7 +67,11 @@ monogatari.script({
     ],
 
     florist_1_positive: [
-       
+        'a Oh, was it? My bad.',
+        'j Yeah, it was.',
+        'j I\'m fine with your recommendation but, your phrasing doesn\'t make me feel too inclined to buy anything now.',
+        'a Well. I find that people are kind of like plant\'s. They look different, they grow different, there\'s a lot you can tell by their behaviours.',
+        'a I for one, can tell that you have no idea what other people think of you.'
         {
             Choice : {
                 Yes : {

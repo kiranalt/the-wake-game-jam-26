@@ -22,7 +22,7 @@ monogatari.script({
                 }
             }
         },
-        'j Yeah, how did you know?',
+        'j I\'m Jimmy. Yeah, how did you know?',
         'b It\s kinda obvious to be honest! I think it\'s a very specific kind of person who comes in asking for a wake cake.',
         'j What\'s that supposed to mean? ',
         'b How often do you really think Reapers need to order funeral cakes...?',
